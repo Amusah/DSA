@@ -30,7 +30,7 @@ function reverseInt(n) {
   let positiveNum;
   let reversed;
   if(n < 0) {
-    positiveNum = n * -1;
+    positiveNum = n * -1; // converting num to positive num before reversal
     reversed = String(positiveNum).split("").reverse().join("");
     return Number(reversed) * Math.sign(n);
   }
