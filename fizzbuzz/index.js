@@ -13,24 +13,24 @@
 //   buzz
 
 function fizzBuzz(n) {
-  for(let i = 1; i <= n; i++){
+  for (let i = 1; i <= n; i++) {
     // is number a multiple of 3 and 5?
-    if(i % 3 === 0 && i % 5 === 0){
-      console.log('fizbuzz');
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizbuzz");
       // return 'fizbuzz'
-    }else if(i % 3 === 0){
+    } else if (i % 3 === 0) {
       // is number a multiple of 3
       console.log("fizz");
       // return 'fizz'
-    }else if(i % 5 === 0){
+    } else if (i % 5 === 0) {
       // is number a multiple of 5
       console.log("buzz");
-    } else{
-      console.log(i)
+    } else {
+      console.log(i);
     }
     // return i;
   }
 }
-fizzBuzz(5)
+fizzBuzz(5);
 
 module.exports = fizzBuzz;

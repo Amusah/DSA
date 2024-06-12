@@ -32,7 +32,7 @@ maxChar("apple 1231111");
 
 // Solution 2
 function maxChar(str){
-  const charMap =  str.split('').reduce((charObj, char) => ({...charObj, [char]: (charObj[char] += 1) || 1}), {});
+  const charMap = str.split('').reduce((charObj, char) => ({...charObj, [char]: (charObj[char] += 1) || 1}), {});
   const values = Object.values(charMap);
   const maxChar = Object.keys(charMap).filter(key => charMap[key] === Math.max(...values)).join('');
   return maxChar;
